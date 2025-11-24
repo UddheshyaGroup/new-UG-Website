@@ -150,7 +150,7 @@ const Home = () => {
             Our Trusted Partners
           </p>
 
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
             <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
 

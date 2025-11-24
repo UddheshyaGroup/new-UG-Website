@@ -3,9 +3,7 @@
   opacity: 0;
   transform: translateY(20px);
 }
-*{
-  outline: 0px solid red;
-}
+
 
 .fade-enter-active {
   opacity: 1;
