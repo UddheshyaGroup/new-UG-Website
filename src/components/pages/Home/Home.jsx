@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import "./home.css"
 
 // Rocket animations (unchanged)
 const rocketAnimations = [...Array(12)].map(() => ({
@@ -44,7 +45,7 @@ const Home = () => {
           {/* Mobile S/M/L: Stacked | md+ & lg+: Side-by-side */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Text – Always first on mobile */}
-            <div className="text-left md:text-left order-2 md:order-1 mb-5 ">
+            <div className="leftSec text-left md:text-left order-2 md:order-1 mb-5 ">
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -67,7 +68,7 @@ const Home = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 1 }}
-                className="text-center text-lg mb-10 max-w-2xl mx-auto md:mx-0 text-gray-300
+                className="text text-center text-lg mb-10 max-w-2xl mx-auto md:mx-0 text-gray-300
                            md:text-xl
                            lg:text-2xl"
               >
@@ -85,13 +86,13 @@ const Home = () => {
                   to="/contact"
                   className="px-8 py-4 bg-green-500 text-black font-bold text-lg rounded-full hover:bg-green-400 transition transform hover:scale-105 shadow-2xl text-center"
                 >
-                  Start Growing Today
+                  <span>Start Growing Today</span>
                 </Link>
                 <Link
                   to="/portfolio"
                   className="px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-black transition transform hover:scale-105 text-center"
                 >
-                  See Our Work →
+                  <span>See Our Work →</span>
                 </Link>
               </motion.div>
             </div>
@@ -369,7 +370,7 @@ const Home = () => {
       </section>
 
       {/* ====================== FINAL CTA WITH ROCKETS ====================== */}
-      <section className="py-24 lg:py-32 bg-gradient-to-r from-green-600 to-emerald-700 text-white relative overflow-hidden">
+      <section className="lastSec py-24 lg:py-32 bg-gradient-to-r from-green-600 to-emerald-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           {rocketAnimations.map((anim, i) => (
             <motion.div
@@ -390,11 +391,11 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="container mx-auto px-6 text-center relative z-10">
+        <div className="rtgBox container mx-auto px-6 text-center relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold mb-8 md:text-5xl lg:text-6xl"
+            className="rtgText text-4xl font-bold mb-8 md:text-5xl lg:text-6xl"
           >
             Ready to Grow Your Business?
           </motion.h2>
@@ -402,7 +403,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl mb-12 max-w-3xl mx-auto md:text-2xl lg:text-3xl"
+            className="rtgSubText text-xl mb-12 max-w-3xl mx-auto md:text-2xl lg:text-3xl"
           >
             Let's build something extraordinary together.
           </motion.p>
@@ -413,9 +414,9 @@ const Home = () => {
           >
             <Link
               to="/contact"
-              className="inline-block px-12 py-6 bg-white text-black font-bold text-xl rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(255,255,255,0.7)] transition-all md:px-16 md:text-2xl"
+              className="gsn inline-block px-12 py-6 bg-white text-black font-bold text-xl rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(255,255,255,0.7)] transition-all md:px-16 md:text-2xl"
             >
-              Get Started Now
+              <span>Get Started Now</span>
             </Link>
           </motion.div>
         </div>
