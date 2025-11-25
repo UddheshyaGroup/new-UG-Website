@@ -55,16 +55,26 @@ const projects = [
     results: 'Enhanced online representation, fostering community engagement in Nepal\'s jazz scene.',
     link: 'https://www.google.com/search?q=gypsy+swing+patan&ie=UTF-8',
   },
-  // {
-  //   title: 'Admission-Focused Marketing',
-  //   client: 'Soaltee GATE Academy',
-  //   image: '/soalteelogo.png',
-  //   imageHeight: 'h-24',
-  //   description: 'Produced static and motion design posts to drive admissions through compelling visual content.',
-  //   services: ['Graphic Design (Static & Motion)', 'Digital Marketing', 'Lead Generation'],
-  //   results: 'Generated targeted inquiries and supported enrollment growth with strategic campaigns.',
-  //   link: 'https://www.google.com/search?gs_ssp=eJzj4tFP1zfMyDVJM6lKqzRgtFI1qDC2TE0ytDS1NEk1NDNJS06xMqgwTzEwNbMwMbI0NDI2N7Ew9-JJTyxJVUjOz8lJTU8FAHjMEv4&q=gate+college&ie=UTF-8',
-  // },
+ {
+  title: 'Expert Social Media Empowerment',
+  client: 'Vedas College',
+  image: '/vedas.png',
+  imageHeight: 'h-44',
+  description: 'Produced static and motion design posts to drive admissions through compelling visual content.',
+  services: ['Social Media Strategy', 'Team Training & Workshops', 'Content Planning', 'Community Engagement Techniques', 'Performance Analytics'],
+  results: 'Equipped the in-house team with the skills to independently manage and grow their platforms, leading to a more dynamic and engaged online community.',
+  link: 'https://www.google.com/search?q=vedas+college&ie=UTF-8',
+  },
+  {
+  title: 'Strategic Business Development Acceleration',
+  client: 'MPercept Technology',
+  image: '/mPercept.png',
+  imageHeight: 'h-44',
+  description: 'Delivered targeted business development support to MPercept Technology strengthen their market positioning and expand growth opportunities.',
+  services: ['Business Development Strategy', 'Market Positioning', 'Lead Generation Frameworks', 'Partnership Mapping', 'Sales Enablement Support'],
+  results: 'Enabled the team to adopt a structured and scalable business development approach, resulting in clearer value communication, stronger client pipelines and improved outreach effectiveness.',
+  link: 'https://www.google.com/search?q=mpercept+technology&oq=mPer&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIPCAgQLhgKGMcBGNEDGIAEMgYICRAuGEDSAQgyMjM4ajBqMagCALACAA&sourceid=chrome&ie=UTF-8',
+  },
 ];
 
 const Portfolio = () => {
