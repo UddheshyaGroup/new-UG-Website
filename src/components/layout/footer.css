@@ -68,3 +68,68 @@
         bottom: 80px;
     }
 }
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .footerSec{
+        margin-top: 60px;
+        height: 350px;
+        overflow: hidden;
+    }
+    
+    .ftext{
+        font-size: 18px;
+        width: 230px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .fcontentBox{
+        height: 250px;
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+        overflow: hidden;
+    }
+
+    .smedia{
+        height: 40px;
+        width: 130px;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .fb{
+        height: 40px;
+        width: 40px;
+    }
+
+    .insta{
+        height: 40px;
+        width: 40px;
+    }
+
+    .linkedin{
+        height: 40px;
+        width: 40px;
+    }
+
+    .tiktok{
+        height: 40px;
+        width: 40px;
+    }
+
+    .youtube{
+        height: 40px;
+        width: 40px;
+    }
+
+    .headText{
+        font-size: 24px;
+    }
+
+    .copyrightSec{
+        position: relative;
+        bottom: 80px;
+    }
+}

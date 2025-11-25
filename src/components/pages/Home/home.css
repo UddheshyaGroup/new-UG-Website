@@ -71,3 +71,72 @@
         height: 120px;
     }
 }
+
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .typewriter{
+        font-size: 32px;
+    }
+
+    .text-green-400{
+        font-size: 28px;
+    }
+
+    .text{
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .px-8{
+        height: 60px;
+        width: 280px;
+        padding: 0px;
+    }
+
+    .px-8 span{
+        font-size: 16px;
+        position: relative;
+        top: 14px;
+    }
+
+    .leftSec{
+        margin-left: 40px;
+    }
+
+    .rtgBox{
+        height: 140px;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .rtgBox .rtgText{
+        font-size: 32px;
+        position: relative;
+        bottom: 60px;
+    }
+
+    .rtgBox .rtgSubText{
+        font-size: 24px;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .rtgBox .gsn{
+        height: 50px;
+        width: 200px;
+        font-size: 18px;
+        border-radius: 19px;
+        padding: 0px;
+        position: relative;
+        bottom: 60px;
+    }
+
+    .gsn span{
+        position: relative;
+        top: 10px;
+    }
+
+    .lastSec{
+        height: 120px;
+    }
+}
