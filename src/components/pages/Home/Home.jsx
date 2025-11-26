@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -12,6 +12,12 @@ const rocketAnimations = [...Array(12)].map(() => ({
 }));
 
 const Home = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setShowPopup(true);
+  }, []);
+
   return (
     <>
       {/* ====================== HERO SECTION ====================== */}
@@ -142,61 +148,7 @@ const Home = () => {
           </svg>
         </motion.div>
       </section>
-
-      {/* ====================== PARTNERS MARQUEE ====================== */}
-      <section className="py-16 bg-white overflow-hidden">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-2xl font-semibold text-gray-700 mb-10 md:text-3xl lg:text-4xl">
-            Our Trusted Partners
-          </p>
-
-          <div className="relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
-
-            {/* Row 1 */}
-            <div className="flex animate-marquee-left gap-10 py-6">
-              {[...Array(4)]
-                .flatMap(() => [
-                  { f: "svi.png", h: "h-20 md:h-24 lg:h-28" },
-                  { f: "NAAV.png", h: "h-20 md:h-24 lg:h-28" },
-                  { f: "Looniva.png", h: "h-24 md:h-32 lg:h-36" },
-                  { f: "gypsy.png", h: "h-16 md:h-20 lg:h-24" },
-                  { f: "hcop.png", h: "h-24 md:h-32 lg:h-36" },
-                ])
-                .map((c, i) => (
-                  <img
-                    key={i}
-                    src={`/${c.f}`}
-                    alt=""
-                    className={`flex-shrink-0 ${c.h} object-contain filter grayscale hover:grayscale-0 transition`}
-                  />
-                ))}
-            </div>
-
-            {/* Row 2 */}
-            <div className="flex animate-marquee-right gap-10 py-6">
-              {[...Array(4)]
-                .flatMap(() => [
-                  { f: "svi.png", h: "h-20 md:h-24 lg:h-28" },
-                  { f: "NAAV.png", h: "h-20 md:h-24 lg:h-28" },
-                  { f: "Looniva.png", h: "h-24 md:h-32 lg:h-36" },
-                  { f: "gypsy.png", h: "h-16 md:h-20 lg:h-24" },
-                  { f: "hcop.png", h: "h-24 md:h-32 lg:h-36" },
-                ])
-                .map((c, i) => (
-                  <img
-                    key={i}
-                    src={`/${c.f}`}
-                    alt=""
-                    className={`flex-shrink-0 ${c.h} object-contain filter grayscale hover:grayscale-0 transition`}
-                  />
-                ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* ====================== SERVICES ====================== */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-6">
@@ -265,6 +217,60 @@ const Home = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ====================== PARTNERS MARQUEE ====================== */}
+      <section className="py-16 bg-white overflow-hidden">
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-2xl font-semibold text-gray-700 mb-10 md:text-3xl lg:text-4xl">
+            Our Trusted Partners
+          </p>
+
+          <div className="relative overflow-hidden">
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
+
+            {/* Row 1 */}
+            <div className="flex animate-marquee-left gap-10 py-6">
+              {[...Array(4)]
+                .flatMap(() => [
+                  { f: "svi.png", h: "h-20 md:h-24 lg:h-28" },
+                  { f: "NAAV.png", h: "h-20 md:h-24 lg:h-28" },
+                  { f: "Looniva.png", h: "h-24 md:h-32 lg:h-36" },
+                  { f: "gypsy.png", h: "h-16 md:h-20 lg:h-24" },
+                  { f: "hcop.png", h: "h-24 md:h-32 lg:h-36" },
+                ])
+                .map((c, i) => (
+                  <img
+                    key={i}
+                    src={`/${c.f}`}
+                    alt=""
+                    className={`flex-shrink-0 ${c.h} object-contain filter grayscale hover:grayscale-0 transition`}
+                  />
+                ))}
+            </div>
+
+            {/* Row 2 */}
+            <div className="flex animate-marquee-right gap-10 py-6">
+              {[...Array(4)]
+                .flatMap(() => [
+                  { f: "svi.png", h: "h-20 md:h-24 lg:h-28" },
+                  { f: "NAAV.png", h: "h-20 md:h-24 lg:h-28" },
+                  { f: "Looniva.png", h: "h-24 md:h-32 lg:h-36" },
+                  { f: "gypsy.png", h: "h-16 md:h-20 lg:h-24" },
+                  { f: "hcop.png", h: "h-24 md:h-32 lg:h-36" },
+                ])
+                .map((c, i) => (
+                  <img
+                    key={i}
+                    src={`/${c.f}`}
+                    alt=""
+                    className={`flex-shrink-0 ${c.h} object-contain filter grayscale hover:grayscale-0 transition`}
+                  />
+                ))}
+            </div>
           </div>
         </div>
       </section>
@@ -420,6 +426,20 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-4">
+          <div className="relative w-full max-w-xl">
+            <img src="/ad.jpg" alt="Advertisement" className="w-full h-auto rounded-lg" />
+            <button 
+              onClick={() => setShowPopup(false)} 
+              className="absolute top-2 right-2 text-white text-4xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };

@@ -89,7 +89,7 @@ const Navbar = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Sanepa, Lalitpur
+            Lalitpur, Nepal / Northampton, United Kingdom
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-2 sm:mt-0">
             <a href="tel:+9779805533602" className="flex items-center gap-2 hover:text-green-300">

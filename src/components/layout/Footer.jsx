@@ -198,6 +198,7 @@ const Footer = () => (
               <div className="text-center sm:text-left">
                 <p className="font-medium text-white">Office Address</p>
                 <p>Sanepa, Lalitpur, Nepal</p>
+                <p>Northampton, United Kingdom</p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-3 justify-center md:justify-start">
@@ -236,7 +237,7 @@ const Footer = () => (
       </div>
 
       {/* Copyright */}
-      <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+      <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm -mb-8">
         <p>
           &copy; {new Date().getFullYear()} Uddheshya Group. All rights
           reserved.

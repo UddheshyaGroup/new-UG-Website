@@ -209,6 +209,7 @@ const Services = () => {
           <h2 className="text-4xl font-bold text-center mb-12 text-black">What We Offer</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-">
             {services.map((service, i) => (
+              <Link to="/contact">
               <motion.div
                 key={i}
                 custom={i}
@@ -232,6 +233,7 @@ const Services = () => {
                   <p className="text-sm text-gray-500 italic">{service.details}</p>
                 </div>
               </motion.div>
+              </Link>
             ))}
           </div>
         </div>
