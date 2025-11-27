@@ -20,18 +20,18 @@ const Career = () => {
 
   const jobs = [
     {
-      title: 'Marketing Specialist',
-      requirements: '2+ years experience, creative mindset.',
+      title: 'Junior Graphic Designer cum Video Editor',
+      requirements: '2+ years of experience in graphic design and video editing. Strong creativity and proficiency in Adobe Suite.',
       type: 'Full-time',
       level: 'Mid Level',
-      department: 'Marketing Department',
+      department: 'Creative / Marketing Department',
     },
     {
-      title: 'Web Developer',
-      requirements: 'Proficient in React, Tailwind.',
-      type: 'Intern',
+      title: 'Graphic Designer Intern',
+      requirements: 'Basic knowledge of Adobe Photoshop, Illustrator. Creative mindset and willingness to learn.',
+      type: 'Intern (Full-Time)',
       level: 'Entry Level',
-      department: 'Technical Department',
+      department: 'Creative Department',
     },
   ];
 
@@ -90,7 +90,7 @@ const Career = () => {
 
     const data = await response.json();
     const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
-    
+
     // Construct download URL
     const downloadUrl = `https://res.cloudinary.com/${cloudName}/raw/upload/fl_attachment/${data.public_id}`;
     return downloadUrl;
@@ -151,7 +151,7 @@ const Career = () => {
           'Your application has been submitted successfully! We\'ll review it and get back to you soon.'
         );
         setFormData({ name: '', email: '', phone: '', coverLetter: '', cv: null });
-        
+
         setTimeout(() => {
           closeModal();
         }, 3000);
