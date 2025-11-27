@@ -37,8 +37,8 @@ const testimonials = [
     testimonial: "In a world that shouts to be heard, clarity is the rarest sound. At Uddheshya, we believe that when your brand speaks its truth, even silence makes an impact. Nothing louder, nothing lesser.",
   },
   {
-    name: "Avijat Niraula",
-    testimonial: "I specialize in crafting and executing strategic initiatives that balance organizational growth with lasting impact. My role as CBDO at Uddheshya is pivotal in driving business development, leveraging my expertise in identifying and tapping into new opportunities through in-depth research, with a profound understanding of market dynamics and creative strategy.",
+    name: "Avijat Niroula",
+    testimonial: "We specialize in crafting and executing strategic initiatives that balance organizational growth with lasting impact. My role as CBDO at Uddheshya is pivotal in driving business development, leveraging my expertise in identifying and tapping into new opportunities through in-depth research, with a profound understanding of market dynamics and creative strategy.",
   },
   {
     name: "Sooyog Shrestha",
@@ -73,7 +73,7 @@ const testimonials = [
 const team = [
   { name: "Smarika Sedhain", position: "Executive Director", image: "/images/team/smarika.png" },
   { name: "Ishan Sedhain", position: "Admin Manager", image: "/images/team/ishan.png" },
-  { name: "Avijat Niraula", position: "Chief Business Development Officer", image: "/images/team/avijat.png" },
+  { name: "Avijat Niroula", position: "Chief Business Development Officer", image: "/images/team/avijat.png" },
   { name: "Sooyog Shrestha", position: "Business Development Manager", image: "/images/team/sooyog.png" },
   { name: "Bishwas Gurung", position: "Research and Content Lead", image: "/images/team/biswas.png" },
   { name: "Nitesh Shrestha", position: "Creative Head ", image: "/images/team/nitesh.png" },
@@ -175,14 +175,14 @@ const About = () => {
             </h1>
 
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-700 max-w-5xl mx-auto leading-relaxed mb-16 px-4">
-              A passionate team of growth engineers, creators, and strategists committed to transforming businesses in Nepal and beyond. We don't just work for you — we grow with you.
+              A passionate team of strategists, business development experts, researchers, growth engineers, and creators committed to transforming businesses in Nepal and beyond. We don't just work for you — we grow with you.
             </p>
 
             <div className="flex flex-wrap justify-center gap-12 md:gap-20">
 
               <div className="text-center">
                 <h3 className="text-5xl md:text-6xl font-bold text-green-400">
-                  <Counter to={10} />+
+                  <Counter to={30} />+
                 </h3>
                 <p className="text-lg text-gray-600 mt-3">Expert Team Members</p>
               </div>
