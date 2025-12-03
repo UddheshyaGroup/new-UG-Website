@@ -9,6 +9,7 @@ import Services from './components/pages/Services/Services';
 import Career from './components/pages/Career/Career';
 import About from './components/pages/About/About';
 import Contact from './components/pages/Contact/Contact';
+import { Analytics } from "@vercel/analytics/react"
 import './App.css'; 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         </main>
         <Footer />
       </div>
+
+      <Analytics />
     </Router>
   );
 }
