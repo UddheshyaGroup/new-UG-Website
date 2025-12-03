@@ -433,7 +433,7 @@ const Home = () => {
           onClick={() => setShowPopup(false)}
         >
           <div
-            className="relative w-full max-w-xl"
+            className="relative w-full max-w-xl win-popup"
             onClick={(e) => e.stopPropagation()}
           >
             <img src="/ad.jpg" alt="Advertisement" className="w-full h-auto rounded-lg" />
