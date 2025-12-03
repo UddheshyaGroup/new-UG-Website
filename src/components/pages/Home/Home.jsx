@@ -18,6 +18,16 @@ const Home = () => {
     setShowPopup(true);
   }, []);
 
+  
+  // ===========================
+  // WINDOWS FIX → Add class to body
+  // ===========================
+  useEffect(() => {
+    if (navigator.userAgent.includes("Windows")) {
+      document.body.classList.add("win-os");
+    }
+  }, []);
+
   return (
     <>
       {/* ====================== HERO SECTION ====================== */}
@@ -439,7 +449,7 @@ const Home = () => {
             <img src="/ad.jpg" alt="Advertisement" className="w-full h-auto rounded-lg" />
             <button
               onClick={() => setShowPopup(false)}
-              className="absolute top-2 right-2 text-white text-4xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition"
+              className="absolute top-3 right-3 text-white text-4xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition"
             >
               &times;
             </button>

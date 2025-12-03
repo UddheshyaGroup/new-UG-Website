@@ -121,20 +121,35 @@
 }
 
 
-/* Windows-only popup scaling (most Windows screens use 96 DPI) */
-@media (resolution: 96dpi) {
+
+/* @media (resolution: 96dpi) {
   .win-popup img {
-    max-height: 80vh !important; /* reduce height */
+    max-height: 80vh !important; 
     width: auto !important;
     object-fit: contain;
   }
 
   .win-popup button {
-    right: 4rem !important;   /* pull the X button inside */      /* slightly reduce size to fit neatly */
+    right: 4rem !important;   
   }
 
-  /* Optional: reduce container width if needed */
+
   .win-popup {
     max-width: 28rem !important;
   }
+} */
+
+
+body.win-os .win-popup img {
+  max-height: 80vh !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+body.win-os .win-popup {
+  max-width: 26rem !important;
+}
+
+body.win-os .win-popup button {
+  right: 2rem !important;
 }
