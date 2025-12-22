@@ -20,18 +20,18 @@ const Career = () => {
 
   const jobs = [
     {
-      title: 'Junior Graphic Designer cum Video Editor',
-      requirements: '2+ years of experience in graphic design and video editing. Strong creativity and proficiency in Adobe Suite.',
-      type: 'Full-time',
-      level: 'Mid Level',
-      department: 'Creative / Marketing Department',
-    },
-    {
-      title: 'Graphic Designer Intern',
-      requirements: 'Basic knowledge of Adobe Photoshop, Illustrator. Creative mindset and willingness to learn.',
+      title: 'Content Creation Intern',
+      requirements: 'Creative mindset, basic content creation and editing skills, willingness to learn',
       type: 'Intern (Full-Time)',
       level: 'Entry Level',
-      department: 'Creative Department',
+      department: 'Content / Creative',
+    },
+    {
+      title: 'Client Service Executive',
+      requirements: 'Bachelor’s degree in Business or related field, good communication skills',
+      type: 'Full-Time',
+      level: 'Entry / Mid Level',
+      department: 'Client Service',
     },
   ];
 
