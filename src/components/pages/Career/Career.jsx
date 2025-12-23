@@ -33,6 +33,13 @@ const Career = () => {
       level: 'Entry / Mid Level',
       department: 'Client Service',
     },
+    {
+      title: 'QA Intern',
+      requirements: 'Basic understanding of software testing, attention to detail, willingness to learn QA processes',
+      type: 'Intern (Full-Time)',
+      level: 'Entry Level',
+      department: 'Quality Assurance',
+    },
   ];
 
   const openModal = (jobTitle) => {
