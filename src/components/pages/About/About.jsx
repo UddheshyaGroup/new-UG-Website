@@ -45,10 +45,6 @@ const testimonials = [
     testimonial: "Growth isn't just about numbers, it's about nurturing connections, building trust, and creating opportunities that last. At Uddheshya, the Business Development Manager bridges vision and value, turning conversations into collaborations and ideas into impact. Because real growth doesn't chase trends, it builds relationships that stand the test of time.",
   },
   {
-    name: "Bishwas Gurung",
-    testimonial: "Being loud with no logic nor reasoning is nothing more than noise while a purposeful nod can be more resonant than the thousand words uttered. At Uddheshya, you can expect your brand to simply speak its truth. Nothing more, nothing less.",
-  },
-  {
     name: "Nitesh Shrestha",
     testimonial: "Ideas are everywhere, but only a few are felt. Creativity isn't about making things look good, it's about making them mean something. At Uddheshya, we shape imagination into identity, turning concepts into experiences that move people. Every color, every line, and every pause is intentional because true creativity doesn't just catch the eye; it stays in the mind.",
   },
@@ -75,10 +71,9 @@ const team = [
   { name: "Ishan Sedhain", position: "Admin Manager", image: "/images/team/ishan.png" },
   { name: "Avijat Niroula", position: "Chief Business Development Officer", image: "/images/team/avijat.png" },
   { name: "Sooyog Shrestha", position: "Business Development Manager", image: "/images/team/sooyog.png" },
-  { name: "Bishwas Gurung", position: "Research and Content Lead", image: "/images/team/biswas.png" },
+  { name: "Parakram K.C.", position: "Technical Lead", image: "/images/team/parakram.png" },
   { name: "Nitesh Shrestha", position: "Creative Head ", image: "/images/team/nitesh.png" },
   { name: "Susan Malakar", position: "Creative Lead", image: "/images/team/susan.png" },
-  { name: "Parakram K.C.", position: "Technical Lead", image: "/images/team/parakram.png" },
   { name: "Srijal Dangol", position: "Research and Technical Officer", image: "/images/team/srijal.png" },
   { name: "Sujan Shrestha", position: "Creative Designer", image: "/images/team/sujan.png" },
 ].map(member => {
